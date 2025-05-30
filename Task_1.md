@@ -15,15 +15,15 @@ You have been placed in charge of designing a **robust monitoring system** for t
 
 | CPU Usage  | Process |
 | ------------- | ------------- |
-| 0.5 - 0.99  | Output "LOW CPU USAGE" using ROS Warn loggers |
+| 0.5 - 0.99  | Output "LOW CPU USAGE" using ROS Warning loggers |
 | 1.0 - 1.99  | Output "Normal CPU USAGE" using ROS Info loggers |
-| > 2.0 | Output "Critical CPU USAGE" using ROS Warning loggers and shutdown ROS |
+| > 2.0 | Output "Critical CPU USAGE" using ROS fatal loggers and shutdown ROS |
 
 | Temperature  | Process |
 | ------------- | ------------- |
-| < 19°  | Output "Low Temperature" using ROS Warn loggers |
+| < 19°  | Output "Low Temperature" using ROS Warning loggers |
 | 20° - 59°  | Output "Normal Temperature" using ROS Info loggers |
-| > 60° | Output "Time to buy a new Pi" using ROS Warning loggers and shutdown ROS |
+| > 60° | Output "Time to buy a new Pi" using ROS fatal loggers and shutdown ROS |
 
 Also create another node called utility which counts all the publishers, subscribers for both the topics and also counts the total number of active nodes.
 
